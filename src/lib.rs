@@ -130,6 +130,7 @@ where
     Ok(io::BufReader::new(file).lines())
 }
 
+// This function returns nonsense at the moment
 fn all_the_queens_are_safe(board: Board) -> Result<bool, Box<dyn Error>> {
     if board.height == 1 {
         if board.queens[0].col != 1 && board.queens[0].row != 1 {
@@ -152,6 +153,7 @@ fn all_the_queens_are_safe(board: Board) -> Result<bool, Box<dyn Error>> {
     }
 }
 
+// This function returns nonsense at the moment
 fn n_queens(num_queens: u32, width: u128, height: u128) -> Result<u32, Box<dyn Error>> {
     let a = width > height;
 
